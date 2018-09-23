@@ -9,3 +9,43 @@ Project Webpage : [Musical Instrument Identification](https://k-priyadarshi.gith
 ### Block Diagram of Project:
 
 ![alt text](https://github.com/shubham-iitg-ece/Musical-Instrument-Detection/blob/master/block%20diagram.png "Musical Instrument Identification")
+
+### Features used in individual classifiers:-
+
+#### Basic classifier and brass classifier:-
+
+1. Spectral centroid
+2. Zero crossing
+3. Spectral rollof
+4. Spectral Crest
+5. Spectral Decrease
+6. Spectral Flatness
+7. Spectral Skewness
+8. Spectral Slope
+
+#### String classifier:-
+
+1. Spectral Centroid
+2. Fundamental frequency
+3. Spectral centroid variance
+4. Spectral Crest
+5. Spectral Decrease
+6. Spectral Flatness
+7. Spectral Skewness
+8. Spectral Slope
+
+#### Woodwind classifier :-
+
+1. Spectral Centroid
+2. Spectral Crest
+3. Spectral Decrease
+4. Spectral Flatness
+5. Spectral Skewness
+6. Spectral Slope
+7. Fundamental Frequency
+8. Variance of Spectral Centroid
+9. MFCC
+
+### Summary
+
+As proposed in our approach, we were successfully able to build a two stage musical instrument detector. The various temporal and spectral features were successfully extracted using efficient algorithms, implemented in MATLAB. We were able to achieve decent test accuracy ( 96.42% for basic classifier, 100% for brass family , 96.7% for string family and 94.59% for the woodwind family). This shows that the features we had chosen for each of the classifiers based on the unique traits of each class were quite appropriate. We have also tried to ensure minimal use of inbuilt MATLAB functions and have written code to the features and supporting functions( like spectrogram, Radix 2 FFT,etc) too ourselves using the algorithms discussed in class (EE320- Digital Signal Processing). 
